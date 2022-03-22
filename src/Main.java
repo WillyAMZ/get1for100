@@ -3,10 +3,10 @@ public class Main {
 
         //входные данные
         int personalAccount = 600;        //Счет клиента
-        int depositAmount = 900;         // Сумма пополнения
+        int depositAmount = 1000;         // Сумма пополнения
 
         //логика программы
-        int bonusRub = (depositAmount > 1000) ? 1 : 0;
+        int bonusRub = (depositAmount >= 1000) ? 1 : 0;
         int bonus = depositAmount / 100 * bonusRub;
         int balance = personalAccount + depositAmount + bonus;
         if (bonusRub == 1) {
